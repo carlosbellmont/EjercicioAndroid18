@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra(SecondActivity.CLAVE_1, "hola")
             startActivity(intent)
         }
     }
